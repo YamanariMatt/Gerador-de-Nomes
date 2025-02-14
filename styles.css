@@ -1,0 +1,141 @@
+/* Adicionando fonte personalizada do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Fundo preto suave */
+    color: #ffffff; /* Texto branco */
+}
+
+.container {
+    text-align: center;
+    background: #1e1e1e; /* Container cinza escuro */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilização do label */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+    color: #f5f5f5; /* Cor de texto suave */
+}
+
+/* Estilização do select (caixa de seleção) */
+select {
+    background-color: #2c2c2c; /* Fundo escuro para o select */
+    color: #ffffff; /* Texto em branco */
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #444; /* Borda suave */
+    width: 100%;
+    max-width: 300px; /* Limita a largura máxima do select */
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover para o select */
+select:hover {
+    background-color: #3a3a3a; /* Cor mais escura no hover */
+}
+
+/* Estilização das opções dentro do select */
+option {
+    background-color: #2c2c2c; /* Fundo escuro para opções */
+    color: #ffffff; /* Texto branco */
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Estilização do select e option em foco */
+select:focus, option:focus {
+    outline: none;
+    border: 1px solid #3498db; /* Foco azul */
+    background-color: #3a3a3a; /* Fundo escuro no foco */
+}
+
+/* Estilização do button */
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #3498db; /* Azul para o botão */
+    color: #ffffff; /* Texto branco */
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #2980b9; /* Azul mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento no botão */
+}
+
+/* Efeito de foco no botão */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Brilho azul no foco */
+}
+
+
+
+
+/* Definição da animação de fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Títulos com efeito de hover moderno */
+h1, h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+h1:hover, h2:hover {
+    color: #3498db; /* Cor azul no hover */
+}
+
+/* Adicionando um efeito de sombra sutil nos textos */
+h1, h2, p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#resultado {
+    font-size: 24px; /* Aumentar o tamanho da fonte */
+    font-weight: bold; /* Deixar o texto em negrito */
+    margin-top: 20px; /* Espaço maior acima do resultado */
+    padding: 10px; /* Adicionar padding para aumentar a área */
+    background-color: #2c2c2c; /* Fundo escuro para destaque */
+    color: #ffffff; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    width: 100%;
+    max-width: 500px; /* Definir largura máxima */
+    margin-left: auto; /* Centralizar horizontalmente */
+    margin-right: auto; /* Centralizar horizontalmente */
+    text-align: center; /* Centralizar o texto */
+}
